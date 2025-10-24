@@ -1,10 +1,14 @@
 .card {
   max-width: 413px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card__image {
-  height: 413px;
-  width: 413px;
+  height: auto;
+  width: 100%;
+  margin-bottom: 12px;
   object-fit: cover;
   display: block;
   border-radius: 8px;
@@ -23,6 +27,7 @@
   border: none;
   background-color: transparent;
   opacity: 0.4;
+  cursor: pointer;
 }
 
 .card__like-btn:hover {
