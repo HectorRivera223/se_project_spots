@@ -43,7 +43,6 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-
 }
 
 .profile__edit-btn {
@@ -70,6 +69,7 @@
   padding: 18px 32px;
   gap: 8px;
   border: none;
+  cursor: pointer;
 }
 
 .profile__add-btn:hover {
@@ -96,6 +96,6 @@
 
   .profile__add-btn {
     margin: 0;
-    text-align;: center
+    text-align: center;
   }
 }
