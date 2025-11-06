@@ -56,11 +56,11 @@ Deployment
 You can view the live version of this project here:
 
 👉 GitHub Pages Link:
-https://github.com/HectorRivera223/se_project_spots
+https://hectorrivera223.github.io/se_project_spots/
 
 ## Project Pitch Video
 
-Check out [this video](https://drive.google.com/file/d/1T0eXivMX-Q0CChZXTdYvuqee-jjY-ndd/view?usp=drive_link), where I describe my
+Check out [this video](https://drive.google.com/file/d/1fjcrudFr1GoOYsYdejCVs3EQvXcvhPI7/view?usp=drive_link), where I describe my
 project and some challenges I faced while building it.
 
 Future Improvements

@@ -1,23 +1,21 @@
 .card {
   max-width: 413px;
-  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .card__title {
-  font-family: Poppins;
-  font-weight: 500;
-  font-style: Medium;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card__image {
   height: 413px;
   width: 413px;
-  margin-bottom: 12px;
   object-fit: cover;
   display: block;
   border-radius: 8px;
@@ -46,15 +44,11 @@
 
 @media screen and (max-width: 627px) {
   .card__image {
-    width: 288;
-    height: 288;
+    width: 288px;
+    height: 288px;
     opacity: 1;
   }
   .card__title {
-    font-family: Poppins;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
   }

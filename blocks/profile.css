@@ -6,6 +6,7 @@
 }
 
 .profile__avatar {
+  object-fit: cover;
   margin-right: 20px;
   border-radius: 8px;
   height: 190px;
@@ -33,11 +34,10 @@
 }
 
 .profile__description {
-  margin: auto;
+  margin: 0 auto;
   font: 500 16px/1 Poppins;
   color: #212121b2;
   max-width: 420px;
-
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -47,6 +47,7 @@
 
 .profile__edit-btn {
   display: flex;
+  padding: 0;
   margin: auto;
   gap: 8px;
   opacity: 0.7;

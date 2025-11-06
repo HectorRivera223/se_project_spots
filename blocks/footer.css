@@ -8,10 +8,7 @@
 }
 
 .footer__copyright {
-  font-family: Poppins;
-  font-weight: 400;
-  font-style: Regular;
+  margin: 0;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
