@@ -34,7 +34,7 @@
 }
 
 .profile__description {
-  margin: 0 auto;
+  margin: 0;
   font: 500 16px/1 Poppins;
   color: #212121b2;
   max-width: 420px;
@@ -48,7 +48,7 @@
 .profile__edit-btn {
   display: flex;
   padding: 0;
-  margin: auto;
+  margin-top: auto;
   gap: 8px;
   opacity: 0.7;
   border: none;
@@ -59,13 +59,15 @@
 }
 
 .profile__add-btn {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
   margin-left: auto;
   margin-top: auto;
   height: 52px;
   background-color: #212121;
-  color: #ffffff;
+  color: #fcf5ef;
   border-radius: 8px;
   padding: 18px 32px;
   gap: 8px;
@@ -90,7 +92,7 @@
   }
 
   .profile__avatar {
-    margin-right: 0;
+    margin-right: 0 0 12px 0;
     height: 80px;
     width: 80px;
   }
@@ -98,5 +100,16 @@
   .profile__add-btn {
     margin: 0;
     text-align: center;
+    width: 100%;
+  }
+
+  .profile__column {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .profile__description {
+    text-align: center;
+    margin: 0 0 32px;
   }
 }

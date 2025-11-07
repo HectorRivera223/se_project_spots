@@ -11,6 +11,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0;
+  max-width: 373px;
 }
 
 .card__image {
@@ -51,6 +53,7 @@
   .card__title {
     line-height: 100%;
     letter-spacing: 0%;
+    max-width: 235px;
   }
   .card__like-btn {
     width: 20;
