@@ -8,7 +8,7 @@ const editProfileDescriptionInput = editProfileModal.querySelector("#profile-des
 const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
-const newPostForm = newPostModal.querySelector.Selector(".modal__form");
+const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostNameInput = newPostModal.querySelector("#card-caption-input");
 const newPostLinkInput = newPostModal.querySelector("#card-image-input");
 
