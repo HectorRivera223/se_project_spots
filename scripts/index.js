@@ -28,8 +28,6 @@ editProfileCloseBtn.addEventListener("click", function () {
 
 
 newPostBtn.addEventListener("click", function () {
-    newPostNameInput.value = cardNameEl.textContent;
-    newPostLinkInput.value = cardLinkEl.textContent;
     newPostModal.classList.add("modal_is-opened")
 });
 
