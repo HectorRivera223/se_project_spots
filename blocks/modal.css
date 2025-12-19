@@ -93,7 +93,7 @@
   margin: 0 0 32px;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
   .modal__submit-btn {  
     max-width: none;
     width: 276;
@@ -134,12 +134,11 @@
     right: 12px;
   }
 
-  .modal__form {
+   .modal__form {
     margin-top: 34px;
   }
 
-  .modal__input {
+   .modal__input {
     font-size: 16px;
   }
-}
-}
+ }
