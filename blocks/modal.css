@@ -131,7 +131,7 @@
   position: absolute;
 }
 
-@media screen (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .modal__submit-btn {  
     max-width: none;
     width: 276px;

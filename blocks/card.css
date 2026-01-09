@@ -2,6 +2,7 @@
   max-width: 413px;
   white-space: nowrap;
   overflow: hidden;
+  position: relative;
 }
 
 .card__title {
@@ -70,7 +71,7 @@
   opacity: 1;
 }
 
-.card__like-btn_avtive:hover {
+.card__like-btn_active:hover {
   opacity: 0.4;
 }
 
