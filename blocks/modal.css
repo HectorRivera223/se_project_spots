@@ -45,7 +45,6 @@
   border: none;
   background-color: #fff;
   opacity: 0.4;
-  background-image: url(../images/close_tab.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -72,7 +71,6 @@
 .modal__form {
   display: flex;
   flex-direction: column;
-  gap: 32px;
 }
 
 .modal__input {
@@ -80,8 +78,10 @@
   width: 100%;
   height: 52px;
   border-radius: 8px;
-  margin: 8px 0 0;
+  margin: 8px 0 32px;
   box-sizing: border-box;
+  border: 1px solid rgba(33,33,33,0.4);
+  padding: 16px 12px;
 }
 
 .modal__input::placeholder {
@@ -104,7 +104,7 @@
 }
 
 .modal__label {
-  margin: 0 0 32px;
+  margin: 0;
 }
 
 .modal__image-container{
