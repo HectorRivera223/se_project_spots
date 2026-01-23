@@ -53,7 +53,7 @@
   top: 0;
   right: -52.5px;
   background-color: transparent;
-  color: white;
+  background-image: url(../images/close_tab.svg);
 }
 
 .modal__close-btn:hover {
@@ -129,6 +129,9 @@
   left: 0px;
   border-radius: 8px;
   position: absolute;
+  margin: 0;
+  padding: 4px 8px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -142,17 +145,8 @@
     border-radius: 8px;
   }
 
-  .modal__container{
-    width: 300;
-    height: 336;
-    top: 134px;
-    left: 10px;
-    gap: 24px;
-    opacity: 1;
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 20px;
-    font-weight: 500;
+  .modal__caption{
+    font-size: 16px;
   }
 
   .modal__submit-btn {  
@@ -182,7 +176,7 @@
  }
   
  @media screen and (max-width: 627px){
-  .modal__close_type_preview{
+  .modal__close-btn_type_preview{
     top: -48px;
     right: 0;
   }

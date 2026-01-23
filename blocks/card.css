@@ -14,6 +14,7 @@
   text-overflow: ellipsis;
   margin: 0;
   max-width: 373px;
+  font-weight: 400;
 }
 
 .card__delete-btn {
@@ -31,6 +32,8 @@
 
 .card__delete-btn:hover {
   background-image: url(../images/Hover.svg);
+  background-color: rgba(255, 0, 0, 0.8);
+  background-size: contain;
 }
 
 .card__image {
