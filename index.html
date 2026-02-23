@@ -29,7 +29,7 @@
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
-              <img src="./images/edit.svg" alt="" />Edit Post
+              <img src="./images/edit.svg" alt="" />Edit Profile
             </button>
           </div>
           <button type="button" class="profile__add-btn">
@@ -59,8 +59,8 @@
           <button type="button" class="modal__close-btn">
             <img src="images/close_tab.png" alt="close button" />
           </button>
-          <h2 class="modal__title">Edit Profile</h2>
-          <form class="modal__form">
+          <h3 class="modal__title">Edit Profile</h3>
+          <form class="modal__form" id="edit-profile-form" novalidate>
             <label for="profile-name-input" class="modal__label"
               >Name
               <input
@@ -68,7 +68,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                minlength="2"
+                maxlength="40"
+                required
               />
+              <span id="profile-name-input-error" class="modal__error">Please fill out this field.</span>
             </label>
             <label for="profile-description-input" class="modal__label"
               >Description
@@ -77,7 +81,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
+                minlength="2"
+                maxlength="200"
               />
+              <span id="profile-description-input-error" class="modal__error">Please lengthen this text to 2 characters or more (you currently have 2 characters).</span>
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
@@ -88,8 +96,8 @@
           <button type="button" class="modal__close-btn">
             <img src="images/close_tab.png" alt="close button" />
           </button>
-          <h2 class="modal__title">New Post</h2>
-          <form class="modal__form">
+          <h3 class="modal__title">New Post</h3>
+          <form class="modal__form" id="new-post-form" novalidate>
             <label for="card-image-input" class="modal__label"
               >Image link
               <input
@@ -97,16 +105,22 @@
                 type="url"
                 class="modal__input"
                 placeholder="Place a link to your image"
+                required
               />
+              <span id="card-image-input-error" class="modal__error">Please enter a URL.</span>
             </label>
             <label for="card-caption-input" class="modal__label"
               >Caption
-              <input
+              <input 
                 id="card-caption-input"
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                minlength="2"
+                maxlength="30"
+                required
               />
+              <span id="card-caption-input-error" class="modal__error">Please fill out this field.</span>
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
@@ -123,6 +137,7 @@
       </div>
 
     </div>
+    <script src="./scripts/validation.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
 </html>

@@ -46,7 +46,7 @@
 }
 
 .profile__edit-btn {
-  display: flex;
+  display: block;
   padding: 0;
   margin-top: auto;
   gap: 8px;
