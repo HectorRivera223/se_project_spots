@@ -40,6 +40,26 @@ function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 }
 
+// Close modal when clicking on overlay
+document.querySelectorAll(".modal").forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    if (evt.target === modal) {
+      closeModal(modal);
+    }
+  });
+});
+
+function handleEscClose(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
+
+document.addEventListener("keydown", handleEscClose);
+
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
@@ -126,11 +146,22 @@ const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const newPostForm = newPostModal.querySelector(".modal__form");
-const newPostNameInput = newPostModal.querySelector("#card-caption-input-error");
-const newPostLinkInput = newPostModal.querySelector("#card-image-input-error");
+const newPostNameInput = newPostModal.querySelector("#card-caption-input");
+const newPostLinkInput = newPostModal.querySelector("#card-image-input");
 
 
-newPostBtn.addEventListener("click", function () {
+  newPostBtn.addEventListener("click", function () {
+  const inputList = Array.from(
+    newPostForm.querySelectorAll(config.inputSelector)
+  );
+
+  const submitButton = newPostForm.querySelector(
+    config.submitButtonSelector
+  );
+
+  resetValidation(newPostForm, inputList);
+  disableButton(submitButton);
+
   openModal(newPostModal);
 });
 
@@ -150,6 +181,17 @@ function handleNewPostSubmit(evt) {
 
   closeModal(newPostModal);
   evt.target.reset();
+
+const inputList = Array.from(
+  newPostForm.querySelectorAll(config.inputSelector)
+);
+
+const submitButton = newPostForm.querySelector(
+  config.submitButtonSelector
+);
+
+resetValidation(newPostForm, inputList);
+disableButton(submitButton);
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);

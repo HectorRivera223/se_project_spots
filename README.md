@@ -63,6 +63,9 @@ https://hectorrivera223.github.io/se_project_spots/
 Check out [this video](https://drive.google.com/file/d/1fjcrudFr1GoOYsYdejCVs3EQvXcvhPI7/view?usp=drive_link), where I describe my
 project and some challenges I faced while building it.
 
+Check out (https://drive.google.com/drive/folders/177r6WGU50SgyXLm484ZKorekJDeH3d75?usp=drive_link)
+where i describe the new updated parts of my project.
+
 Future Improvements
 Add JavaScript functionality for interactive elements.
 Improve accessibility with ARIA attributes.
